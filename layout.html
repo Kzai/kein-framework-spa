@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HTML Layout</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
+    <!--This is for testing purposes - like a replica scratch-pad
+    of what app.html should look like, complete with styling which
+    was then slammed into the app.main.css file. This workflow
+    is handy when it comes to working with CSS and mocking-up
+    style and layout. The different HTML divs become part of the
+    configMap in app.main.js-->
+    <style>
+
+        .app-main-head, .app-main-head-logo, .app-main-head-acct,
+        .app-main-head-search, .app-main-main, .app-main-main-nav,
+        .app-main-main-content, .app-main-foot, .app-main-chat,
+        .app-main-modal {
+            position: absolute;
+        }
+        .app-main-head {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+        }
+        .app-main-head-logo {
+            top: 4px;
+            left: 4px;
+            height: 32px;
+            width: 128px;
+            background: orange;
+        }
+        .app-main-head-acct {
+            top    : 4px;
+            right  : 0;
+            width  : 64px;
+            height : 32px;
+            background : green;
+        }
+        .app-main-head-search {
+            top        : 4px;
+            right      : 64px;
+            width      : 248px;
+            height     : 32px;
+            background : blue;
+        }
+        .app-main-main {
+            top    : 40px;
+            left   : 0;
+            bottom : 40px;
+            right  : 0;
+        }
+        .app-main-main-content,
+        .app-main-main-nav {
+            top    : 0;
+            bottom : 0;
+        }
+        .app-main-main-nav {
+            width      : 250px;
+            background : #eee;
+        }
+        .app-x-closed .app-main-main-nav {
+            width : 0;
+        }
+        .app-main-main-content {
+            left       : 250px;
+            right      : 0;
+            background : #ddd;
+        }
+        .spa-x-closed .app-main-main-content {
+            left : 0;
+        }
+        .app-main-foot {
+            bottom : 0;
+            left   : 0;
+            right  : 0;
+            height : 40px;
+        }
+        .app-main-chat {
+            bottom     : 0;
+            right      : 0;
+            width      : 300px;
+            height     : 15px;
+            background : red;
+            z-index    : 1;
+        }
+        .app-main-modal {
+            margin-top    : -200px;
+            margin-left   : -200px;
+            top           : 50%;
+            left          : 50%;
+            width         : 400px;
+            height        : 400px;
+            background    : #fff;
+            border-radius : 3px;
+            z-index       : 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+        <div class="app-main-head">
+            <div class="app-main-head-logo"></div>
+            <div class="app-main-head-acct"></div>
+            <div class="app-main-head-search"></div>
+        </div>
+        <div class="app-main-main">
+            <div class="app-main-main-nav"></div>
+            <div class="app-main-main-content"></div>
+        </div>
+        <div class="app-main-foot"></div>
+        <div class="app-main-chat"></div>
+        <div class="app-main-modal"></div>
+    </div>
+</body>
+</html>

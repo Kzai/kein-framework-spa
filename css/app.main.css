@@ -1,0 +1,96 @@
+/*
+ *  app.main.css
+ *  Main styles
+ */
+
+
+.app-main-head, .app-main-head-logo, .app-main-head-acct,
+.app-main-head-search, .app-main-main, .app-main-main-nav,
+.app-main-main-content, .app-main-foot, .app-main-chat,
+.app-main-modal {
+    position: absolute;
+}
+.app-main-head {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+.app-main-head-logo {
+    top: 4px;
+    left: 4px;
+    height: 32px;
+    width: 128px;
+    background: orange;
+}
+.app-main-head-acct {
+    top    : 4px;
+    right  : 0;
+    width  : 64px;
+    height : 32px;
+    background : green;
+}
+.app-main-head-search {
+    top        : 4px;
+    right      : 64px;
+    width      : 248px;
+    height     : 32px;
+    background : blue;
+}
+.app-main-main {
+    top    : 40px;
+    left   : 0;
+    bottom : 40px;
+    right  : 0;
+}
+.app-main-main-content,
+.app-main-main-nav {
+    top    : 0;
+    bottom : 0;
+}
+.app-main-main-nav {
+    width      : 250px;
+    background : #eee;
+}
+.app-x-closed .app-main-main-nav {
+    width : 0;
+}
+.app-main-main-content {
+    left       : 250px;
+    right      : 0;
+    background : #ddd;
+}
+.spa-x-closed .app-main-main-content {
+    left : 0;
+}
+.app-main-foot {
+    bottom : 0;
+    left   : 0;
+    right  : 0;
+    height : 40px;
+}
+.app-main-chat {
+    bottom     : 0;
+    right      : 0;
+    width      : 300px;
+    height     : 15px;
+    cursor     : pointer;
+    background : red;
+    border-radius:  5px 0 0 0;
+    z-index    : 1;
+}
+
+    .app-main-chat:hover {
+        background: #a00;
+    }
+.app-main-modal {
+    margin-top    : -200px;
+    margin-left   : -200px;
+    top           : 50%;
+    left          : 50%;
+    width         : 400px;
+    height        : 400px;
+    background    : #fff;
+    border-radius : 3px;
+    z-index       : 2;
+}
